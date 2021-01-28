@@ -2,7 +2,6 @@
 import os
 from flask import Blueprint, request, render_template, redirect, url_for, flash
 from datetime import date, datetime
-from pprint import PrettyPrinter
 from books_app.models import Book, Author, Genre
 
 # Import app and db from events_app package so that we can run app
