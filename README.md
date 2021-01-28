@@ -16,7 +16,13 @@ Clone this repository to your computer.
 pip3 install -r requirements.txt
 ```
 
-Then, you can run the following to run the Flask server:
+Then, rename the `.env.example` file to `.env`:
+
+```
+mv .env.example .env
+```
+
+Then you can run the following to run the Flask server:
 
 ```
 python3 app.py

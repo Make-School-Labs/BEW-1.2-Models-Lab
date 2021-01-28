@@ -59,13 +59,3 @@ book_genre_table = db.Table('book_genre',
     db.Column('book_id', db.Integer, db.ForeignKey('book.id')),
     db.Column('genre_id', db.Integer, db.ForeignKey('genre.id'))
 )
-
-# class User(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     username = db.Column(db.String(80), nullable=False, unique=True)
-#     favorite_books = db.relationship('Book', secondary='favorite_book')
-
-# favorite_book_table = db.Table('favorite_book',
-#     db.Column('book_id', db.Integer, db.ForeignKey('book.id')),
-#     db.Column('user_id', db.Integer, db.ForeignKey('user.id'))
-# )
