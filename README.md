@@ -30,7 +30,7 @@ Let's take a look at the models in `books_app/models.py`. There are **three mode
 
 The relationships between `Book`, `Author`, and `Genre` are as follows:
 
-[ diagram goes here ]
+![Books ERD](assets/books-erd.png)
 
 **Take a look at the fields within each model class.** There are two types of fields: The first is `db.Column` fields, which correspond to the actual columns within the SQL table. The second is `db.relationship` fields, which are not actual columns in the SQL table; instead these are _shortcuts_ that tell SQLAlchemy to perform a table join. This makes it way easier to get all of the data we want, without having to perform any fancy operations.
 
@@ -150,7 +150,7 @@ If you want to try deleting objects, check out [this Stackoverflow post](https:/
 
 Now that we've gotten the hang of writing queries, let's try out writing a new model class. We'll be writing a model for `User` as well as an extra table `favorite_book_table`. The relationships should look like this:
 
-[ diagram goes here ]
+![Books ERD](assets/books-user-erd.png)
 
 In `books_app/models.py`, **write a model class for the `User` entity**. It should have the following fields:
 
