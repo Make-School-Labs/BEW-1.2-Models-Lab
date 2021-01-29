@@ -136,7 +136,7 @@ Updating objects with SQLAlchemy is very easy! We just need to get the object, m
 Let's try adding a genre and publish date to our new book:
 
 ```python
->>> b1 = Book.query.filter_by(name="The Handmaid's Tale").one()
+>>> b1 = Book.query.filter_by(title="The Handmaid's Tale").one()
 >>> b1.publish_date = datetime(1985, 6, 1) # add a publish date
 >>> g1 = Genre(name="dystopia")
 >>> b1.genres.append(g1) # add the "dystopia" genre
