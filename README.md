@@ -28,7 +28,7 @@ Then you can run the following to run the Flask server:
 python3 app.py
 ```
 
-# 
+## Challenges
 
 **Navigate to `books_app/routes.py` and complete the TODOs for the `homepage()` route.** When you are done, the homepage should display a list of all users, with each user linking to their profile. Make sure you run the Flask application to test it out!
 
